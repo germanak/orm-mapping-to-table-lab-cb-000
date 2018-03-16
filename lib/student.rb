@@ -13,14 +13,15 @@ class Student
         id INTEGER PRIMARY KEY,
         name TEXT,
         grade TEXT
-      )
-      SQL
+        )
+        SQL
 
       DB[:conn].execute(sql)
   end
 
   def self.drop_table
-
+    sql = <<-SQL 
+       
   end
 
   # Remember, you can access your database connection anywhere in this class
